@@ -23,4 +23,4 @@
 1. Clone dự án từ GitHub:
 
 ```shell
-git clone https://github.com/username/booking-website.git
+git clone https://github.com/Zanrmh/room-rental-nextjs.git
