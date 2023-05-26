@@ -10,8 +10,9 @@ import {
   GiForestCamp,
   GiIsland,
   GiTreeSwing,
+  GiWindow,
 } from 'react-icons/gi';
-import { FaCrown, FaFortAwesome } from 'react-icons/fa';
+import { FaFortAwesome } from 'react-icons/fa';
 import { MdOutlineVilla, MdPark } from 'react-icons/md';
 
 import CategoryBox from '../CategoryBox';
@@ -20,7 +21,7 @@ import Container from '../Container';
 export const categories = [
   {
     label: 'Trang trí',
-    icon: FaCrown,
+    icon: GiWindow,
     description: 'Căn phòng được trang trí đẹp!',
   },
   {
