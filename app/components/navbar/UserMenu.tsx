@@ -40,7 +40,7 @@ const UserMenu: React.FC<UserMenuProps> = ({ currentUser }) => {
 
   return (
     <div className="relative">
-      <div className="flex flex-row items-center gap-3">
+      <div className="flex flex-row items-center gap-2">
         <div
           onClick={onRent}
           className="
@@ -51,9 +51,10 @@ const UserMenu: React.FC<UserMenuProps> = ({ currentUser }) => {
             py-3 
             px-4 
             rounded-full 
-            hover:bg-neutral-100 
+            hover:bg-[#202124]
             transition 
             cursor-pointer
+            text-gray-200
           "
         >
           Cho thuê phòng
@@ -65,18 +66,22 @@ const UserMenu: React.FC<UserMenuProps> = ({ currentUser }) => {
           md:py-1
           md:px-2
           border-[1px] 
-          border-neutral-200 
+        border-[#5F6368]
           flex 
           flex-row 
           items-center 
           gap-3 
           rounded-full 
           cursor-pointer 
-          hover:shadow-md 
+          shadow-sm
+        shadow-[#3C4043]
+        hover:shadow-[#5F6368]
+          hover:shadow-md
           transition
+          bg-[#202124]
           "
         >
-          <AiOutlineMenu />
+          <AiOutlineMenu className="text-white" />
           <div className="hidden md:block">
             <Avatar src={currentUser?.image} />
           </div>
@@ -86,22 +91,27 @@ const UserMenu: React.FC<UserMenuProps> = ({ currentUser }) => {
         <div
           className="
             absolute 
-            rounded-xl 
-            shadow-md
+            rounded-xl
+            shadow-lg
+            shadow-[#3C4043]
             w-[40vw]
             md:w-3/4 
-            bg-white 
+            bg-[#0E1013]
             overflow-hidden 
             right-0 
-            top-12 
+            top-12
             text-sm
+            text-gray-200
+            border-[1px]
+            transition 
+          border-[#5F6368]
           "
         >
           <div className="flex flex-col cursor-pointer">
             {currentUser ? (
               <>
                 <MenuItem
-                  label="Chuyến đi"
+                  label="Phòng đã đặt"
                   onClick={() => router.push('/trips')}
                 />
                 <MenuItem

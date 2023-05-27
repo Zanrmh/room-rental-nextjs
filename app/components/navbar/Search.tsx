@@ -54,15 +54,19 @@ const Search = () => {
     <div
       onClick={searchModal.onOpen}
       className="
-        border-[1px] 
+        border-[1px]
+        border-[#5F6368]
         w-full 
-        md:w-auto 
-        py-2 
-        rounded-full 
-        shadow-sm 
-        hover:shadow-md 
+        lg:w-auto 
+        py-1 
+        rounded-full
+        shadow-sm
+        shadow-[#3C4043]
+        hover:shadow-[#5F6368]
+        hover:shadow-md
         transition 
         cursor-pointer
+        bg-[#202124]
       "
     >
       <div
@@ -78,6 +82,7 @@ const Search = () => {
             text-sm 
             font-semibold 
             px-6
+            text-gray-200
           "
         >
           {locationLabel}
@@ -89,8 +94,10 @@ const Search = () => {
             text-sm 
             font-semibold 
             px-6 
-            border-x-[1px] 
+            border-x-[2px]
+            border-black
             flex-1 
+            text-gray-200
             text-center
           "
         >
@@ -101,7 +108,7 @@ const Search = () => {
             text-sm 
             pl-6 
             pr-2 
-            text-gray-600 
+            text-gray-300
             flex 
             flex-row 
             items-center 
@@ -114,7 +121,7 @@ const Search = () => {
               p-2 
               bg-black 
               rounded-full 
-              text-white
+            text-gray-200
             "
           >
             <BiSearch size={18} />
