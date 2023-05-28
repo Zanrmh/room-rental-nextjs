@@ -45,7 +45,10 @@ const TripsClient: React.FC<TripsClientProps> = ({
 
   return (
     <Container>
-      <Heading title="Chuyến đi" subtitle="Danh sách phòng bạn đã đặt." />
+      <Heading
+        title="Phòng đã đặt"
+        subtitle="Danh sách phòng bạn đã đặt lịch."
+      />
       <div
         className="
           mt-10

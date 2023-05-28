@@ -44,7 +44,10 @@ const ReservationsClient: React.FC<ReservationsClientProps> = ({
 
   return (
     <Container>
-      <Heading title="Reservations" subtitle="Bookings on your properties" />
+      <Heading
+        title="Quản lý đặt phòng"
+        subtitle="Danh sách phòng khách đã đặt lịch."
+      />
       <div
         className="
           mt-10

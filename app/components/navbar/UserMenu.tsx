@@ -99,7 +99,7 @@ const UserMenu: React.FC<UserMenuProps> = ({ currentUser }) => {
             bg-[#0E1013]
             overflow-hidden 
             right-0 
-            top-12
+            top-[53px]
             text-sm
             text-gray-200
             border-[1px]
@@ -119,7 +119,7 @@ const UserMenu: React.FC<UserMenuProps> = ({ currentUser }) => {
                   onClick={() => router.push('/favorites')}
                 />
                 <MenuItem
-                  label="My reservations"
+                  label="Quản lý phòng đặt"
                   onClick={() => router.push('/reservations')}
                 />
                 <MenuItem

@@ -104,6 +104,8 @@ const Modal: React.FC<ModalProps> = ({
             translate
             duration-300
             h-full
+            shadow-lg
+            shadow-[#5b5c5c]
             ${showModal ? 'translate-y-0' : 'translate-y-full'}
             ${showModal ? 'opacity-100' : 'opacity-0'}
           `}
