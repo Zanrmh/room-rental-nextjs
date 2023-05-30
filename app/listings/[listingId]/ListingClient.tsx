@@ -75,7 +75,7 @@ const ListingClient: React.FC<ListingClientProps> = ({
         listingId: listing?.id,
       })
       .then(() => {
-        toast.success('Thêm thành công!');
+        toast.success('Đặt phòng thành công!');
         setDateRange(initialDateRange);
         router.push('/trips');
       })

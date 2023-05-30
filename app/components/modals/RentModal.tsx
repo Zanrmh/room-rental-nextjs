@@ -96,7 +96,7 @@ const RentModal = () => {
     axios
       .post('/api/listings', data)
       .then(() => {
-        toast.success('Thêm thành công!');
+        toast.success('Tạo thành công!');
         router.refresh();
         reset();
         setStep(STEPS.CATEGORY);
